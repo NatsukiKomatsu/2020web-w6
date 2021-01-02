@@ -42,10 +42,10 @@
     const num = 10;
     const dai = Math.floor(Math.random() * num); // 0 - 4
     const kyou = Math.floor(Math.random() * num);
-    const chuu = Math.floor(Math.random() * num);
-    const chuu = Math.floor(Math.random() * num);
-    const chuu = Math.floor(Math.random() * num);
-    const chuu = Math.floor(Math.random() * num);
+    const chuu1 = Math.floor(Math.random() * num);
+    const chuu2 = Math.floor(Math.random() * num);
+    const chuu3 = Math.floor(Math.random() * num);
+    const chuu4 = Math.floor(Math.random() * num);
 
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
@@ -58,7 +58,16 @@
         } else if (i === kyou) {
           div.textContent = '凶';
           div.classList.add('kyou');
-        } else if (i === chuu) {
+        } else if (i === chuu1) {
+          div.textContent = '中吉';
+          div.classList.add('chuukichi');
+        } else if (i === chuu2) {
+          div.textContent = '中吉';
+          div.classList.add('chuukichi');
+        } else if (i === chuu3) {
+          div.textContent = '中吉';
+          div.classList.add('chuukichi');
+        } else if (i === chuu4) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
         } else {
