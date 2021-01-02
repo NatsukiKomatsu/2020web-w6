@@ -54,10 +54,11 @@
     for(let i=0;i<num;i++){
       arr[i]=i;
     }
-    for(let j=0; j<num;j++,len--){
+    for(let j=0; j<num;j++){
       const rndNum = Math.floor(Math.random() * num);
       numArr.push(arr[rndNum]);
       arr[rndNum]=arr[num-1];
+      num--;
     }
     
 //     function randomizing(){
