@@ -48,28 +48,75 @@
     const chuu2 = Math.floor(Math.random() * num);
     const chuu3 = Math.floor(Math.random() * num);
     const chuu4 = Math.floor(Math.random() * num);
+    
+    const arr = [];
+    numArr = [];
+    for(let i=0;i<num;i++){
+      arr[i]=i;
+    }
+    for(let j=0,let len = arr.length; j<num;j++,len--){
+      rndNum = Math.floor(Math.random() * len);
+      numArr.push(arr[rndNum]);
+      arr[rndNum]=arr[len-1];
+    }
+    
+//     function randomizing(){
+//    var arr = [];
+//    numArr = []; 
+//    for(var i=0; i < 5; i++){
+//       arr[i]=i+1;
+//    }
+
+//    for(var j = 0, var len = arr.length; j < 5; j++, len--) {
+//       rndNum = Math.floor(Math.random()*len);
+//       numArr.push(arr[rndNum]);
+//       arr[rndNum] = arr[len-1];
+//    }
+// }
 
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        if (i === dai) {
+//         if (i === dai) {
+//           div.textContent = '大吉';
+//           div.classList.add('daikichi');
+//         } else if (i === kyou) {
+//           div.textContent = '凶';
+//           div.classList.add('kyou');
+//         } else if (i === chuu1) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else if (i === chuu2) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else if (i === chuu3) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else if (i === chuu4) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else {
+//           div.textContent = '小吉';
+//           div.classList.add('shoukichi');
+//         }
+        if (i === numArr[0]) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
-        } else if (i === kyou) {
+        } else if (i === numArr[1]) {
           div.textContent = '凶';
           div.classList.add('kyou');
-        } else if (i === chuu1) {
+        } else if (i === numArr[2]) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
-        } else if (i === chuu2) {
+        } else if (i === numArr[3]) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
-        } else if (i === chuu3) {
+        } else if (i === numArr[4]) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
-        } else if (i === chuu4) {
+        } else if (i === numArr[5]) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
         } else {
