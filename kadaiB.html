@@ -50,12 +50,12 @@
     const chuu4 = Math.floor(Math.random() * num);
     
     const arr = [];
-    numArr = [];
+    const numArr = [];
     for(let i=0;i<num;i++){
       arr[i]=i;
     }
     for(let j=0; j<num;j++,len--){
-      rndNum = Math.floor(Math.random() * num);
+      const rndNum = Math.floor(Math.random() * num);
       numArr.push(arr[rndNum]);
       arr[rndNum]=arr[num-1];
     }
