@@ -51,18 +51,15 @@
     const chuu3 = Math.floor(Math.random() * num);
     const chuu4 = Math.floor(Math.random() * num);
     
-    function randomizing(){
-      const arr = [];
-      const numArr = [];
-      for(let i=0;i<num;i++){
-        arr[i]=i;
-      }
-      for(let j=0; j<num;j++ , num--){
-        const rndNum = Math.floor(Math.random() * num);
-        numArr.push(arr[rndNum]);
-        arr[rndNum]=arr[num-1];
-      }
-      return numArr;
+    const arr = [];
+    const numArr = [];
+    for(let i=0;i<num;i++){
+      arr[i]=i;
+    }
+    for(let j=0; j<num;j++ , num--){
+      const rndNum = Math.floor(Math.random() * num);
+      numArr.push(arr[rndNum]);
+      arr[rndNum]=arr[num-1];
     };
     
 //     function randomizing(){
@@ -106,10 +103,10 @@
 //           div.textContent = '小吉';
 //           div.classList.add('shoukichi');
 //         }
-        if (i === numArr[1]) {
+        if (i === numArr[0]) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
-        } else if (i === numArr[6]) {
+        } else if (i === numArr[1]) {
           div.textContent = '凶';
           div.classList.add('kyou');
         } else if (i === numArr[2]) {
