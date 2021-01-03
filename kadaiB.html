@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Practice Webtechb kadaiB</title>
+  <title>JavaScript Webtechb kadaiB</title>
   <style>
     body {
       display: flex;
@@ -56,9 +56,10 @@
     while(a){
       const i = a-1;
       const j = Math.floor(Math.random() * a);
-      const t = arr[--i];
+//       const t = arr[--i];
       arr[i]=arr[j];
-      arr[j]=t;
+      arr[j]=arr[i-1];
+      i--;
     }
     
 //     const arr = [];
