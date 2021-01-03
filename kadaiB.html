@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Webtechb kadaiB</title>
+  <title>JavaScript Prectice Webtechb kadaiB</title>
   <style>
     body {
       display: flex;
@@ -51,16 +51,25 @@
     const chuu3 = Math.floor(Math.random() * num);
     const chuu4 = Math.floor(Math.random() * num);
     
-    const arr = [];
-    const numArr = [];
-    for(let i=0;i<num;i++){
-      arr[i]=i;
+    const arr=[0,1,2,3,4,5,6,7,8,9];
+    const a=arr.length;
+    while(a){
+      const j = Math.floor(Math.random() * a);
+      const t = arr[--a];
+      arr[a]=arr[j];
+      arr[j]=t;
     }
-    for(let j=0, len=arr.length; j<num;j++ , len--){
-      const rndNum = Math.floor(Math.random() * num);
-      numArr.push(arr[rndNum]);
-      arr[rndNum]=arr[len-1];
-    };
+    
+//     const arr = [];
+//     const numArr = [];
+//     for(let i=0;i<num;i++){
+//       arr[i]=i;
+//     }
+//     for(let j=0, len=arr.length; j<num;j++ , len--){
+//       const rndNum = Math.floor(Math.random() * num);
+//       numArr.push(arr[rndNum]);
+//       arr[rndNum]=arr[len-1];
+//     };
     
 //     function randomizing(){
 //    var arr = [];
