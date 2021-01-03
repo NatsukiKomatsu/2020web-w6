@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Webtechb kadaiB</title>
+  <title>JavaScript Practice Webtechb kadaiB</title>
   <style>
     body {
       display: flex;
@@ -59,7 +59,7 @@ var randoms = [];
 var min = 0, max = 9;
  
 /** 重複チェックしながら乱数作成 */
-for(i = min; i <= max; i++){
+for(let i = min; i <= max; i++){
   while(true){
     var tmp = intRandom(min, max);
     if(!randoms.includes(tmp)){
