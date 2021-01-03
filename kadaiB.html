@@ -55,7 +55,7 @@
     const a=arr.length;
     while(a){
       const j = Math.floor(Math.random() * a);
-      const t = arr[--a];
+      const t = arr[a--];
       arr[a]=arr[j];
       arr[j]=t;
     }
