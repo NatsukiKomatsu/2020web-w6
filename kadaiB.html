@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Practice Webtechb kadaiB</title>
+  <title>JavaScript Webtechb kadaiB</title>
   <style>
     body {
       display: flex;
@@ -33,7 +33,7 @@
     .kyou {
       background: purple;
       border-radius: 40%;
-      transform: rotate(360deg);
+/*       transform: rotate(360deg); */
 /*       transform: scale(0.5); */
     }
   </style>
@@ -68,69 +68,13 @@
     function intRandom(min, max){
       return Math.floor( Math.random() * (max - min + 1)) + min;
     }
-//     const arr=[0,1,2,3,4,5,6,7,8,9];
-//     const a=arr.length;
-//     const i = a-1;
-//     while(a){
-//       const j = Math.floor(Math.random() * a);
-// //       const t = arr[--i];
-//       arr[i]=arr[j];
-//       arr[j]=arr[i-1];
-//       i=i--;
-//     }
-    
-//     const arr = [];
-//     const numArr = [];
-//     for(let i=0;i<num;i++){
-//       arr[i]=i;
-//     }
-//     for(let j=0, len=arr.length; j<num;j++ , len--){
-//       const rndNum = Math.floor(Math.random() * num);
-//       numArr.push(arr[rndNum]);
-//       arr[rndNum]=arr[len-1];
-//     };
-    
-//     function randomizing(){
-//    var arr = [];
-//    numArr = []; 
-//    for(var i=0; i < 5; i++){
-//       arr[i]=i+1;
-//    }
 
-//    for(var j = 0, var len = arr.length; j < 5; j++, len--) {
-//       rndNum = Math.floor(Math.random()*len);
-//       numArr.push(arr[rndNum]);
-//       arr[rndNum] = arr[len-1];
-//    }
-// }
 
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-//         if (i === dai) {
-//           div.textContent = '大吉';
-//           div.classList.add('daikichi');
-//         } else if (i === kyou) {
-//           div.textContent = '凶';
-//           div.classList.add('kyou');
-//         } else if (i === chuu1) {
-//           div.textContent = '中吉';
-//           div.classList.add('chuukichi');
-//         } else if (i === chuu2) {
-//           div.textContent = '中吉';
-//           div.classList.add('chuukichi');
-//         } else if (i === chuu3) {
-//           div.textContent = '中吉';
-//           div.classList.add('chuukichi');
-//         } else if (i === chuu4) {
-//           div.textContent = '中吉';
-//           div.classList.add('chuukichi');
-//         } else {
-//           div.textContent = '小吉';
-//           div.classList.add('shoukichi');
-//         }
         if (i === randoms[0]) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
