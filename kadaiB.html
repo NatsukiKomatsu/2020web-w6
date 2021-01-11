@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Webtechb kadaiB</title>
+  <title>JavaScript Practice Webtechb kadaiB</title>
   <style>
     body {
       display: flex;
@@ -70,33 +70,59 @@
     }
 
 
+    var d = 1, c = 5, s = 5, k = 1;
+    
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        if (i === randoms[0]) {
+        for(let l = 0; l < d-1; l++){
+          if (i === randoms[l]) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
-        } else if (i === randoms[1]) {
+        }
+        }
+        for(let l = d; l < k+d-1; l++){
+          if (i === randoms[l]) {
           div.textContent = '凶';
           div.classList.add('kyou');
-        } else if (i === randoms[2]) {
+        }
+        }
+        for(let l = k+d; l < c+k+d-1; l++){
+          if (i === randoms[l]) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
-        } else if (i === randoms[3]) {
-          div.textContent = '中吉';
-          div.classList.add('chuukichi');
-        } else if (i === randoms[4]) {
-          div.textContent = '中吉';
-          div.classList.add('chuukichi');
-        } else if (i === randoms[5]) {
-          div.textContent = '中吉';
-          div.classList.add('chuukichi');
-        } else {
+        }
+        }
+        for(let l = c+k+d; l < s+c+k+d-1; l++){
+          if (i === randoms[l]) {
           div.textContent = '小吉';
           div.classList.add('shoukichi');
         }
+        }
+//         if (i === randoms[0]) {
+//           div.textContent = '大吉';
+//           div.classList.add('daikichi');
+//         } else if (i === randoms[1]) {
+//           div.textContent = '凶';
+//           div.classList.add('kyou');
+//         } else if (i === randoms[2]) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else if (i === randoms[3]) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else if (i === randoms[4]) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else if (i === randoms[5]) {
+//           div.textContent = '中吉';
+//           div.classList.add('chuukichi');
+//         } else {
+//           div.textContent = '小吉';
+//           div.classList.add('shoukichi');
+//         }
       });
 
       document.body.appendChild(div);
