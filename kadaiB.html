@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>JavaScript Practice Webtechb kadaiB</title>
+  <title>JavaScript Webtechb kadaiB</title>
   <style>
     body {
       display: flex;
@@ -70,32 +70,32 @@
     }
 
 
-    var d = 1, c = 5, s = 5, k = 1;
+    var d = 1, c = 4, s = 4, k = 1;
     
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        for(let l = 0; l < d-1; l++){
+        for(let l = 0; l <= d-1; l++){
           if (i === randoms[l]) {
           div.textContent = '大吉';
           div.classList.add('daikichi');
         }
         }
-        for(let l = d; l < k+d-1; l++){
+        for(let l = d; l <= k+d-1; l++){
           if (i === randoms[l]) {
           div.textContent = '凶';
           div.classList.add('kyou');
         }
         }
-        for(let l = k+d; l < c+k+d-1; l++){
+        for(let l = k+d; l <= c+k+d-1; l++){
           if (i === randoms[l]) {
           div.textContent = '中吉';
           div.classList.add('chuukichi');
         }
         }
-        for(let l = c+k+d; l < s+c+k+d-1; l++){
+        for(let l = c+k+d; l <= s+c+k+d-1; l++){
           if (i === randoms[l]) {
           div.textContent = '小吉';
           div.classList.add('shoukichi');
